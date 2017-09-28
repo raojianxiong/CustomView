@@ -48,7 +48,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public void click(View view){
         ActivityOptions option = ActivityOptions.makeSceneTransitionAnimation(this, view, "shareName");
-        startActivity(new Intent(this,PieChartActivity.class),option.toBundle());
+        switch (view.getId()){
+            case R.id.google:
+                startActivity(new Intent(this,PieChartActivity.class),option.toBundle());
+                break;
+            case R.id.facebook:
+                startActivity(new Intent(this,VisionActivity.class),option.toBundle());
+                break;
+            case R.id.twitter:
+                break;
+            case R.id.linkedin:
+                break;
+        }
     }
     private void initViews() {
         play = (Button) findViewById(R.id.play);

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:transitionName="shareName"
+    tools:context="com.example.jianxiongrao.demose.VisionActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/vision"
+            android:onClick="goTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="视力" />
+
+        <Button
+            android:onClick="goTo"
+            android:id="@+id/watch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手表" />
+        <Button
+            android:id="@+id/select"
+            android:text="选择"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <com.example.jianxiongrao.demose.view.VsisionView
+        android:id="@+id/vision_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <com.example.jianxiongrao.demose.view.WatchTable
+        android:id="@+id/watch_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
