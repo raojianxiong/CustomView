@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <Button android:id="@+id/play"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="播放"
+        />
+    <Button android:id="@+id/pause"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="暂停"
+        />
+    <SeekBar android:id="@+id/sb"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        />
+    <LinearLayout
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.example.jianxiongrao.demose.view.GooglePlusButton
+        android:layout_width="75dp"
+        android:layout_weight="1"
+        app:roundedCorner="true"
+        android:id="@+id/google"
+        android:layout_margin="5dp"
+        android:textAlignment="center"
+        android:onClick="click"
+        app:iconSize="30dp"
+        app:roundedCornerRadius="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="75dp"
+        >
+
+    </com.example.jianxiongrao.demose.view.GooglePlusButton>
+
+    <com.example.jianxiongrao.demose.view.FacebookButton
+        android:layout_width="75dp"
+        android:layout_margin="5dp"
+        android:id="@+id/facebook"
+        android:layout_weight="1"
+        app:roundedCorner="true"
+        android:onClick="click"
+        app:iconSize="30dp"
+        app:roundedCornerRadius="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/google"
+        android:layout_toRightOf="@+id/google"
+        android:layout_height="75dp"
+       />
+
+
+    <com.example.jianxiongrao.demose.view.TwitterButton
+        android:onClick="click"
+        android:id="@+id/twitter"
+        android:layout_width="75dp"
+        app:roundedCorner="true"
+        android:layout_margin="5dp"
+        app:iconSize="30dp"
+        app:roundedCornerRadius="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="75dp"
+        android:layout_toEndOf="@+id/facebook"
+        android:layout_toRightOf="@+id/facebook"
+        />
+
+    <com.example.jianxiongrao.demose.view.LinkedInButton
+        android:onClick="click"
+        android:id="@+id/linkedin"
+        android:layout_width="75dp"
+        app:roundedCorner="true"
+        android:layout_margin="5dp"
+        app:roundedCornerRadius="75dp"
+        app:iconSize="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="75dp"
+        android:layout_toEndOf="@+id/twitter"
+        android:layout_toRightOf="@+id/twitter"/>
+
+    </LinearLayout>
+</LinearLayout>
