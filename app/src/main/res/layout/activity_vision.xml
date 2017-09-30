@@ -30,6 +30,7 @@
         <Button
             android:id="@+id/select"
             android:text="选择"
+            android:onClick="goTo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
@@ -40,6 +41,11 @@
         android:layout_height="match_parent" />
     <com.example.jianxiongrao.demose.view.WatchTable
         android:id="@+id/watch_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <com.example.jianxiongrao.demose.view.CheckView
+        android:onClick="anim"
+        android:id="@+id/check_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>
