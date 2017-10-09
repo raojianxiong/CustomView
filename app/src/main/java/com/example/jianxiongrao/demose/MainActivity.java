@@ -56,6 +56,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(this,VisionActivity.class),option.toBundle());
                 break;
             case R.id.twitter:
+                startActivity(new Intent(this,LeafLoadingActivity.class),option.toBundle());
                 break;
             case R.id.linkedin:
                 break;
