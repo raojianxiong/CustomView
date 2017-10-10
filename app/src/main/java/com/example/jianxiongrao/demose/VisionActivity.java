@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.jianxiongrao.demose.view.CheckView;
+import com.example.jianxiongrao.demose.view.RadarView;
 import com.example.jianxiongrao.demose.view.VsisionView;
 import com.example.jianxiongrao.demose.view.WatchTable;
 
@@ -14,6 +15,7 @@ public class VisionActivity extends AppCompatActivity {
     private VsisionView visionView;
     private WatchTable watchTableView;
     private CheckView checkView;
+    private RadarView radarView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,7 @@ public class VisionActivity extends AppCompatActivity {
         visionView = (VsisionView) findViewById(R.id.vision_view);
         watchTableView = (WatchTable) findViewById(R.id.watch_view);
         checkView = (CheckView) findViewById(R.id.check_view);
+        radarView = (RadarView) findViewById(R.id.radar_view);
     }
 
     public void goTo(View view) {
@@ -30,16 +33,25 @@ public class VisionActivity extends AppCompatActivity {
                 visionView.setVisibility(View.VISIBLE);
                 watchTableView.setVisibility(View.GONE);
                 checkView.setVisibility(View.GONE);
+                radarView.setVisibility(View.GONE);
                 break;
             case R.id.watch:
                 visionView.setVisibility(View.GONE);
                 watchTableView.setVisibility(View.VISIBLE);
                 checkView.setVisibility(View.GONE);
+                radarView.setVisibility(View.GONE);
                 break;
             case R.id.select:
                 visionView.setVisibility(View.GONE);
                 watchTableView.setVisibility(View.GONE);
+                radarView.setVisibility(View.GONE);
                 checkView.setVisibility(View.VISIBLE);
+                break;
+            case R.id.radar:
+                radarView.setVisibility(View.VISIBLE);
+                visionView.setVisibility(View.GONE);
+                watchTableView.setVisibility(View.GONE);
+                checkView.setVisibility(View.GONE);
                 break;
         }
     }

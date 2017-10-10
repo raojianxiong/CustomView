@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(this,LeafLoadingActivity.class),option.toBundle());
                 break;
             case R.id.linkedin:
+                startActivity(new Intent(this,BezierActivity.class),option.toBundle());
                 break;
         }
     }

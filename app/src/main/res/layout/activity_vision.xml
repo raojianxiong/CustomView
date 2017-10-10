@@ -28,11 +28,18 @@
             android:layout_height="wrap_content"
             android:text="手表" />
         <Button
-            android:id="@+id/select"
-            android:text="选择"
+        android:id="@+id/select"
+        android:text="选择"
+        android:onClick="goTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/radar"
+            android:text="雷达"
             android:onClick="goTo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+
     </LinearLayout>
 
     <com.example.jianxiongrao.demose.view.VsisionView
@@ -46,6 +53,10 @@
     <com.example.jianxiongrao.demose.view.CheckView
         android:onClick="anim"
         android:id="@+id/check_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <com.example.jianxiongrao.demose.view.RadarView
+        android:id="@+id/radar_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
