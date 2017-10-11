@@ -16,10 +16,20 @@
             android:layout_height="wrap_content"
             android:onClick="goDie"
             android:text="变化" />
+        <Button
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="goDie"
+            android:text="变化" />
     </LinearLayout>
 
     <com.example.jianxiongrao.demose.view.BezierView
         android:id="@+id/bezier_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <com.example.jianxiongrao.demose.view.SearchView
+        android:id="@+id/search_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>
