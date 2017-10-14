@@ -77,6 +77,6 @@ public class Rotate3dAnimation extends Animation {
         matrix.setValues(mValues);
         //调节中心点
         matrix.preTranslate(-centerX,-centerY);
-        matrix.preTranslate(centerX,centerY);
+        matrix.postTranslate(centerX,centerY);
     }
 }
