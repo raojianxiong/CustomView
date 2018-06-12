@@ -40,8 +40,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-    </LinearLayout>
 
+    </LinearLayout>
+    <Button
+        android:id="@+id/pointer"
+        android:onClick="goTo"
+        android:text="指针"
+        android:textSize="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
     <com.example.jianxiongrao.demose.view.VsisionView
         android:id="@+id/vision_view"
         android:layout_width="match_parent"
@@ -59,5 +66,9 @@
         android:id="@+id/radar_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+    <com.example.jianxiongrao.demose.view.PointerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pointer_view"/>
 
 </LinearLayout>
