@@ -22,6 +22,18 @@
             android:layout_height="wrap_content"
             android:onClick="goDie"
             android:text="变化" />
+        <Button
+            android:id="@+id/roate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="goDie"
+            android:text="旋转" />
+        <Button
+            android:text="遥控"
+            android:onClick="goDie"
+            android:id="@+id/remote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
     <com.example.jianxiongrao.demose.view.BezierView
@@ -32,4 +44,14 @@
         android:id="@+id/search_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+    <ImageView
+        android:padding="30dp"
+        android:id="@+id/rotate_view"
+        android:src="@drawable/img07"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+<com.example.jianxiongrao.demose.view.RemoteControlMenu
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/remote_view"/>
 </LinearLayout>
